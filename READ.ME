@@ -1,13 +1,116 @@
-E-commerce and Employee Performance SQL Analysis
-Project Overview
+# E-Commerce Sales & Employee Analytics SQL Project
 
-This project demonstrates SQL queries to analyze e-commerce orders, payments, and employee performance.
-It covers data aggregation, ranking, filtering, window functions, and advanced analytics.
+## Project Overview
 
-The database contains three main tables:
+This project demonstrates SQL-based data analysis using an E-Commerce sales dataset and Employee performance dataset.
 
-ecommerce_orders – Stores order details for customers.
-ecommerce_payments – Stores payment information for orders.
-employee_performance – Contains employee salary and performance data.
+The project covers:
+- Database creation
+- Data insertion
+- Constraints and indexing
+- Business analytics queries
+- Advanced SQL concepts
+- Window functions
+- Revenue analysis
+- Employee performance analysis
 
-The queries include metrics like top performers, revenue trends, discounts, and region-wise analysis.
+---
+
+# Database Schema
+
+## Tables Used
+
+### 1. ecommerce_orders
+Stores customer order details.
+
+Columns:
+- order_id
+- customer_id
+- customer_name
+- region
+- product_category
+- order_date
+- sales_amount
+
+### 2. ecommerce_payments
+Stores payment and discount details.
+
+Columns:
+- payment_id
+- order_id
+- payment_method
+- payment_status
+- payment_date
+- discount_amount
+- final_amount
+
+### 3. employee_performance
+Stores employee salary and performance information.
+
+Columns:
+- emp_id
+- emp_name
+- department
+- location
+- joining_date
+- monthly_salary
+- performance_score
+
+---
+
+# SQL Concepts Used
+
+## Basic SQL
+- SELECT
+- WHERE
+- ORDER BY
+- GROUP BY
+- HAVING
+
+## Intermediate SQL
+- JOINS
+- Subqueries
+- Aggregate Functions
+- Correlated Subqueries
+
+## Advanced SQL
+- Window Functions
+- DENSE_RANK()
+- ROW_NUMBER()
+- LAG()
+- Running Totals
+- Percentage Contribution Analysis
+
+---
+
+# Key Business Problems Solved
+
+## E-Commerce Analytics
+- Region-wise total sales
+- Top selling product categories
+- Average category sales
+- Successful payment revenue
+- Payment failure percentage
+- Running monthly revenue
+- Region-wise sales contribution
+- Most popular products by region
+- High discount analysis
+
+## Employee Analytics
+- Department average salary comparison
+- Top performing employees
+- Second highest salary by department
+- Performance score analysis
+- Salary trend analysis
+- Recent employee hiring analysis
+
+---
+
+# Advanced SQL Features Demonstrated
+
+## Window Functions
+```sql
+DENSE_RANK()
+ROW_NUMBER()
+LAG()
+SUM() OVER()
